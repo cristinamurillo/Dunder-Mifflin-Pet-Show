@@ -1,0 +1,5 @@
+dogs index
+<% @dogs.each do |dog|%>
+<%= link_to dog.name, dog %>
+<% end %>
+<%= button_to "sort", "/dogs/sort", method: :get %>
